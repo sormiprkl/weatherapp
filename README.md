@@ -33,8 +33,8 @@ Here are some things in different categories that you can do to make the app bet
 *Docker containers are central to any modern development initiative. By knowing how to set up your application into containers and make them interact with each other, you have learned a highly useful skill.*
 
 * Both *frontend* and *backend* directories have a **Dockerfile** in them. This allows running individual Docker containers for both ends by navigating into the directory and running following start command. 
-  For *fronend* `docker build -t weatherapp_frontend . && docker run --rm -i -p 8000:8000 --name weatherapp_frontend -t weatherapp_frontend`
-  For *backend* `docker build -t weatherapp_backend . && docker run --rm -i -p 9000:9000 --name weatherapp_backend -t weatherapp_backend`
+ For *frontend* `docker build -t weatherapp_frontend . && docker run --rm -i -p 8000:8000 --name weatherapp_frontend -t weatherapp_frontend`
+ For *backend* `docker build -t weatherapp_backend . && docker run --rm -i -p 9000:9000 --name weatherapp_backend -t weatherapp_backend`
 
 * In root directory is a **docker-compose.yml** -file connecting the frontend and the backend, enabling running the app in a connected set of containers.
 
